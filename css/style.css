@@ -1,0 +1,296 @@
+/* font link here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/*----------------- main body style ------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFFFFF;
+    width: 100%;
+}
+/*----------------- header style here ------------------*/
+.header-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 130px;
+}
+.main-header{
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 550px;
+    border-radius: 30px;
+    background: #161616;
+}
+.header-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title h1{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.header-title p{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.header-title button{
+    cursor: pointer;
+    padding: 12px 25px;
+    width: 31%;
+    background: #DD0000;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 1s, width .5s;
+    
+    
+}
+.header-title button:hover{
+    background-color: yellowgreen;
+    width: 35%;
+    color: black;
+    
+}
+.header-img img{
+    width: 470px;
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 56px;
+}
+/*--------------- section style here ---------------- */
+.section-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.section-info{
+    display: flex;
+}
+
+/*----------------- section left------------------ */
+.section-left{
+    width: 170px;
+    height: 205px;
+    background: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-left button{
+    width: 125px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+.section-left .button-color{
+    background: rgb(255, 0, 0);
+    color: #FFFFFF;
+}
+.link-up a{
+    text-decoration: none;
+    color: #161616;
+}
+
+/*-------------------- section right--------------------- */
+.section-right-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 24px;
+    column-gap: 30px;
+    margin-left: 24px;
+}
+.section-right{
+    width: 295px;
+    height: 300px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+   
+}
+.section-right img{
+    width: 295px;
+    margin-bottom: -15px;
+}
+.section-title{
+    padding: 20px;
+}
+.section-title button{
+    font-weight: bold;
+}
+.section-title h3{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section-title .time-duration{
+    display: flex;
+    margin-bottom: -30px;
+}
+.time-duration .icon{
+    margin-left: 50px;
+}
+.section-right-view{
+    display: none;
+}
+.hidden{
+ display: none;  
+}
+
+/*---------------- footer style here------------ */
+footer{
+    text-align: center;
+    background: #161616;
+    margin-top: 100px;
+}
+.main-footer{
+    padding: 50px;
+}
+.footer-title{
+    color: #FFFFFF;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.nav-bar nav ul{
+    display: flex;
+    justify-content: center;
+}
+footer nav ul{
+    list-style: none;
+}
+footer nav ul li{
+    margin: 0 20px;
+}
+footer nav ul li a{
+    text-decoration: none;
+    color: #B9B9B9;
+    font-size: 12px;
+}
+.link-icon{
+    visibility: hidden;
+}
+
+
+
+/*----------------- mobile device responsive---------------- */
+@media screen and (max-width:576px){
+    .header-info{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-title h1{
+        font-size: 2em;
+        line-height: 45px;
+    }
+    .header-title .hide-item{
+        display: none;
+    }
+    .header-img img{
+        width: 100%;
+    height: 73%;
+    margin-left: 10px;
+    margin-top: 9px;
+    }
+    .header-title{
+        margin-top: 130px;
+    }
+    .section-info{
+        flex-direction: column;
+    }
+    .section-left{
+        flex-direction: column;
+    width: 100%;
+    background: white;
+    margin-top: -90px;
+    }
+    .section-right-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-bar nav ul{
+        flex-direction: column;
+    }
+    .hidden{
+        display: none;
+    }
+    .link-icon{
+        color: wheat;
+        margin-top: 3%;
+        
+    }
+    .margin{
+        margin-right: 2%;
+    }
+    .margin-three{
+        margin-left: 2%;
+    }
+    #get{
+        visibility: visible;
+    }
+
+}
+
+/*------------------ tab device respnsive-------------------- */
+@media screen and (min-width:577px) and (max-width:768px) {
+    .header-img img{
+        width: 100%;
+        height: 70vh;
+        margin-left: 0px;
+        margin-top: 8.2em;
+    }
+    .header-title .hide-item{
+        display: none;
+    }
+    .header-title h1{
+        font-size: 2em;
+    }
+    .header-title{
+        margin-left: 60px;
+    }
+    /* section part response */
+    .section-info{
+        flex-direction: column;
+    }
+    .section-left{
+        flex-direction: row;
+        width: 96%;
+        margin-left: 4%;
+        background-color: white;
+        margin-top: -120px;
+    }
+    .section-right-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .respon{
+        display: none;
+    }
+    .responsive{
+        display: flex;
+        justify-content: center;
+    }
+    .section-btn button{
+        
+        background: #DD0000;
+        border-radius: 5px;
+        color: white;
+        padding: 12px 29px;
+        margin-top: 50px;
+        border: none;
+    }
+    .link-icon{
+        visibility: hidden;
+    }
+}
